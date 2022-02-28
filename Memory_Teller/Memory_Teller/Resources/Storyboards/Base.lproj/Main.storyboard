@@ -11,7 +11,7 @@
         <!--목록-->
         <scene sceneID="Xg9-yY-E2r">
             <objects>
-                <tableViewController id="r5j-Hg-Fnf" sceneMemberID="viewController">
+                <tableViewController id="r5j-Hg-Fnf" customClass="MemoListVC" customModule="Memory_Teller" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KZc-bz-vAl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
         <!--상세 화면-->
         <scene sceneID="PQt-09-47S">
             <objects>
-                <viewController title="상세 화면" id="X19-VM-Lhr" sceneMemberID="viewController">
+                <viewController title="상세 화면" id="X19-VM-Lhr" customClass="MemoReadVC" customModule="Memory_Teller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vda-oI-UYP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
         <!--메모 작성-->
         <scene sceneID="K11-Vv-BRn">
             <objects>
-                <viewController id="tPS-HD-VbP" sceneMemberID="viewController">
+                <viewController id="tPS-HD-VbP" customClass="MemoFormVC" customModule="Memory_Teller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v9l-Pv-IEC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
