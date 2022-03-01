@@ -69,6 +69,11 @@
                                         <constraint firstItem="D3u-in-pHK" firstAttribute="top" secondItem="pps-Hc-Q99" secondAttribute="topMargin" id="eXY-Eq-TSg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="IUz-10-ak2" id="YB7-aS-hXR"/>
+                                    <outlet property="regdate" destination="aMK-oq-Vah" id="S5Y-A7-OAj"/>
+                                    <outlet property="subject" destination="D3u-in-pHK" id="xKb-yd-daO"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="A9W-G3-fDT" customClass="MemoCell" customModule="Memory_Teller" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="124.5" width="414" height="80"/>
@@ -126,6 +131,12 @@
                                         <constraint firstItem="Hf5-Ec-ABa" firstAttribute="trailing" secondItem="GWb-LQ-fE4" secondAttribute="trailingMargin" id="y42-Sq-MF8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="20T-Qh-nzR" id="r2i-IK-cmV"/>
+                                    <outlet property="img" destination="g3z-pR-wcI" id="weX-CB-cjL"/>
+                                    <outlet property="regdate" destination="Hf5-Ec-ABa" id="1M4-Yf-aOe"/>
+                                    <outlet property="subject" destination="K7m-aE-fmE" id="XPF-D5-cUa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
