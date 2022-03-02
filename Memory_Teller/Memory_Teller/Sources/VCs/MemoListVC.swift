@@ -12,12 +12,32 @@ class MemoListVC: UITableViewController {
     // 앱 델리게이트 객체의 참조 정보를 읽어온다.
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    // 사이드 바 오픈 기능을 위임할 델리게이트
+    var delegate: RevealVC?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let btnSideBar = UIBarButtonItem(
+            image: UIImage(named: "sidemenu.png"),
+            style: UIBarButtonItem.Style.plain,
+            target: self,
+            action: #selector(moveSide)
+            )
+        
+        self.navigationItem.leftBarButtonItem = btnSideBar
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
+    }
+    
+    @objc func moveSide(_ sender: Any) {
+        if self.delegate?.isSideBarShowing == false {
+            self.delegate?.openSideBar(nil)
+        } else {
+            self.delegate?.closeSideBar(nil)
+        }
     }
     
     // 셀의 갯수 결정

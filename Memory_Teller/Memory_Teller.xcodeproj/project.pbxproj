@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D214FEEC27CE2E69006ED284 /* RevealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214FEEB27CE2E69006ED284 /* RevealVC.swift */; };
+		D214FEEE27CE2ECA006ED284 /* SideBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214FEED27CE2ECA006ED284 /* SideBarVC.swift */; };
+		D214FEF627CE300E006ED284 /* icon02.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF027CE300E006ED284 /* icon02.png */; };
+		D214FEF727CE300E006ED284 /* icon04.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF127CE300E006ED284 /* icon04.png */; };
+		D214FEF827CE300E006ED284 /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF227CE300E006ED284 /* sidemenu.png */; };
+		D214FEF927CE300E006ED284 /* icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF327CE300E006ED284 /* icon01.png */; };
+		D214FEFA27CE300E006ED284 /* icon03.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF427CE300E006ED284 /* icon03.png */; };
+		D214FEFB27CE300E006ED284 /* icon05.png in Resources */ = {isa = PBXBuildFile; fileRef = D214FEF527CE300E006ED284 /* icon05.png */; };
 		D22B9ACD27CCA5B300CC3460 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22B9ACC27CCA5B300CC3460 /* MemoListVC.swift */; };
 		D22B9ACF27CCA5FB00CC3460 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22B9ACE27CCA5FB00CC3460 /* MemoFormVC.swift */; };
 		D22B9AD127CCA60700CC3460 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22B9AD027CCA60700CC3460 /* MemoReadVC.swift */; };
@@ -21,6 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D214FEEB27CE2E69006ED284 /* RevealVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealVC.swift; sourceTree = "<group>"; };
+		D214FEED27CE2ECA006ED284 /* SideBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarVC.swift; sourceTree = "<group>"; };
+		D214FEF027CE300E006ED284 /* icon02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon02.png; sourceTree = "<group>"; };
+		D214FEF127CE300E006ED284 /* icon04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon04.png; sourceTree = "<group>"; };
+		D214FEF227CE300E006ED284 /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
+		D214FEF327CE300E006ED284 /* icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon01.png; sourceTree = "<group>"; };
+		D214FEF427CE300E006ED284 /* icon03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon03.png; sourceTree = "<group>"; };
+		D214FEF527CE300E006ED284 /* icon05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon05.png; sourceTree = "<group>"; };
 		D22B9ACC27CCA5B300CC3460 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		D22B9ACE27CCA5FB00CC3460 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		D22B9AD027CCA60700CC3460 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
@@ -47,6 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D214FEEF27CE2FF0006ED284 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D214FEF327CE300E006ED284 /* icon01.png */,
+				D214FEF027CE300E006ED284 /* icon02.png */,
+				D214FEF427CE300E006ED284 /* icon03.png */,
+				D214FEF127CE300E006ED284 /* icon04.png */,
+				D214FEF527CE300E006ED284 /* icon05.png */,
+				D214FEF227CE300E006ED284 /* sidemenu.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		D22B9AD227CCA78100CC3460 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +113,7 @@
 		D2AB64CC27C8F05900229857 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D214FEEF27CE2FF0006ED284 /* Icons */,
 				D2AB64C127C8F00800229857 /* Assets.xcassets */,
 				D2AB64CD27C8F07000229857 /* Storyboards */,
 				D2AB64B527C8F00600229857 /* AppDelegate.swift */,
@@ -117,6 +147,8 @@
 				D22B9ACC27CCA5B300CC3460 /* MemoListVC.swift */,
 				D22B9ACE27CCA5FB00CC3460 /* MemoFormVC.swift */,
 				D22B9AD027CCA60700CC3460 /* MemoReadVC.swift */,
+				D214FEEB27CE2E69006ED284 /* RevealVC.swift */,
+				D214FEED27CE2ECA006ED284 /* SideBarVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -188,9 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D214FEF627CE300E006ED284 /* icon02.png in Resources */,
+				D214FEFB27CE300E006ED284 /* icon05.png in Resources */,
+				D214FEFA27CE300E006ED284 /* icon03.png in Resources */,
 				D2AB64C527C8F00800229857 /* LaunchScreen.storyboard in Resources */,
 				D2AB64C227C8F00800229857 /* Assets.xcassets in Resources */,
+				D214FEF827CE300E006ED284 /* sidemenu.png in Resources */,
+				D214FEF927CE300E006ED284 /* icon01.png in Resources */,
 				D2AB64BD27C8F00600229857 /* Main.storyboard in Resources */,
+				D214FEF727CE300E006ED284 /* icon04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +242,9 @@
 				D22B9AD427CCA7A800CC3460 /* MemoCell.swift in Sources */,
 				D22B9AD627CCA89400CC3460 /* MemoData.swift in Sources */,
 				D2AB64B627C8F00600229857 /* AppDelegate.swift in Sources */,
+				D214FEEC27CE2E69006ED284 /* RevealVC.swift in Sources */,
 				D22B9ACF27CCA5FB00CC3460 /* MemoFormVC.swift in Sources */,
+				D214FEEE27CE2ECA006ED284 /* SideBarVC.swift in Sources */,
 				D22B9AD127CCA60700CC3460 /* MemoReadVC.swift in Sources */,
 				D2AB64C027C8F00600229857 /* Memory_Teller.xcdatamodeld in Sources */,
 				D22B9ACD27CCA5B300CC3460 /* MemoListVC.swift in Sources */,
@@ -360,6 +400,8 @@
 				DEVELOPMENT_TEAM = KLKPT7BZGN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memory_Teller/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -388,6 +430,8 @@
 				DEVELOPMENT_TEAM = KLKPT7BZGN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Memory_Teller/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
