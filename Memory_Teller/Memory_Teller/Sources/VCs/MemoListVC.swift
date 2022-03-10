@@ -26,6 +26,21 @@ class MemoListVC: UITableViewController {
             )
         
         self.navigationItem.leftBarButtonItem = btnSideBar
+        
+        // 화면 끝에서 다른 쪽으로 패닝하는 제스처 정의
+        let dragLeft = UIScreenEdgePanGestureRecognizer(
+            target: self,
+            action: #selector(moveSide)
+        )
+        dragLeft.edges = UIRectEdge.left // 시작 모서리는 왼쪽
+        self.view.addGestureRecognizer(dragLeft) // 뷰의 제스처 객체를 등록
+        
+        // 화면 스와이프 제스처 정의 (사이드 메뉴 닫기용)
+        let dragRight = UISwipeGestureRecognizer(
+            target: self,
+            action: #selector(moveSide))
+        dragRight.direction = .left // 왼쪽 방향
+        self.view.addGestureRecognizer(dragRight) // 뷰에 제스처 객체를 등록
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,10 +48,16 @@ class MemoListVC: UITableViewController {
     }
     
     @objc func moveSide(_ sender: Any) {
-        if self.delegate?.isSideBarShowing == false {
+        if sender is UIScreenEdgePanGestureRecognizer {
             self.delegate?.openSideBar(nil)
-        } else {
+        } else if sender is UISwipeGestureRecognizer {
             self.delegate?.closeSideBar(nil)
+        } else if sender is UIBarButtonItem {
+            if self.delegate?.isSideBarShowing == false {
+                self.delegate?.openSideBar(nil)
+            } else {
+                self.delegate?.closeSideBar(nil)
+            }
         }
     }
     
